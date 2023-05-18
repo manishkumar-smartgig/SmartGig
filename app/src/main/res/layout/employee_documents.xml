@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ghost_white"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <View
+        android:id="@+id/view_employee_doc"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_top"
+        android:elevation="1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1_employee_doc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_employee_doc" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_employee_doc"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="30dp"
+        android:elevation="15sp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/view1_employee_doc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view1_employee_doc">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_employee_doc"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/person_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_person_employee_doc"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/person_name"
+                android:textColor="@color/textColor1"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/img_employee_doc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_person_possiton_employee_doc"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/person_position"
+                android:textColor="@color/textColor2"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_person_employee_doc"
+                app:layout_constraintTop_toBottomOf="@+id/tv_person_employee_doc" />
+
+            <ImageButton
+                android:id="@+id/top_cardview_btn_employee_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow_down"
+                app:layout_constraintBottom_toBottomOf="@id/tv_person_employee_doc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_person_employee_doc"
+                app:layout_constraintTop_toTopOf="@id/tv_person_employee_doc" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/spinnerbtn_documents"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="125dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rectangle_black_background"
+            android:textAllCaps="false"
+            android:theme="@style/Customrbtndocuments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_employee_doc" />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_two_add_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="27dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerbtn_documents">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_uploadphoto_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/upload_photo"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_uploadphoto_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_uploadphoto_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_uploadphoto_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_xmarksheet_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/x_marks"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_xmarksheet_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_xmarksheet_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_xmarksheet_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_uploadphoto_employee_doc" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_xiimarks_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/xii_marks"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_xiimarks_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_xiimarks_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_xiimarks_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_xmarksheet_employee_doc" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_ugmarks_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/ug_marks"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_ugmarks_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_ugmarks_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_ugmarks_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_xiimarks_employee_doc" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_pgmarks_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/pg_marks"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_pgmarks_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_pgmarks_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_pgmarks_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_ugmarks_employee_doc" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_companypayslip_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/company_payslip"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_companypayslip_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_companypayslip_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_companypayslip_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_pgmarks_employee_doc" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_companyofferletter_one_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/company_offerletter1"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_companyofferletter_one_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_companyofferletter_one_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_companyofferletter_one_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_companypayslip_employee_doc" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_companyofferletter_two_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/company_offerletter2"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_companyofferletter_two_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_companyofferletter_two_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_companyofferletter_two_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_companyofferletter_one_employee_doc" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_companyofferletter_three_employee_doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/company_offerletter3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_companyofferletter_three_employee_doc"
+                    app:layout_constraintStart_toStartOf="@+id/et_companyofferletter_three_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_companyofferletter_three_employee_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:inputType="none"
+                    android:layout_marginTop="46dp"
+                    android:theme="@style/Customrbtnupload_documents"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_companyofferletter_two_employee_doc" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_submit_employee_doc"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/background_button2"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@id/Btn_cancel_employee_doc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_companyofferletter_three_employee_doc" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_cancel_employee_doc"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/button_background_white"
+                    android:text="cancel"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="46dp"
+                    app:layout_constraintStart_toEndOf="@id/Btn_submit_employee_doc"
+                    app:layout_constraintTop_toBottomOf="@+id/et_companyofferletter_three_employee_doc" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_logout_apply_leave"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="125dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/rectangle_black_background"
+            android:text="Log out"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:theme="@style/CustomButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_two_add_employee" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

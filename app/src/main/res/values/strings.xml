@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">SmartGig</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="person_name">Mahesh Nayani</string>
+    <string name="person_position">CEO/Founder</string>
+
+
+
+    <string name="employee_id"><font color="#000000">Employee Id</font><font color="#FF5A1F">*</font> </string>
+    <string name="full_name"><font color="#000000">Full name</font><font color="#FF5A1F">*</font> </string>
+    <string name="gender"><font color="#000000">Gender</font><font color="#FF5A1F">*</font> </string>
+    <string name="dob"><font color="#000000">DOB</font><font color="#FF5A1F">*</font> </string>
+    <string name="email_id"><font color="#000000">Email Id</font><font color="#FF5A1F">*</font> </string>
+    <string name="mobile_number"><font color="#000000">Mobile number</font><font color="#FF5A1F">*</font> </string>
+    <string name="employee_type"><font color="#000000">Employee Type</font><font color="#FF5A1F">*</font> </string>
+    <string name="designation"><font color="#000000">Designation</font><font color="#FF5A1F">*</font> </string>
+    <string name="role"><font color="#000000">Role</font><font color="#FF5A1F">*</font> </string>
+    <string name="qualification"><font color="#000000">Qualification</font><font color="#FF5A1F">*</font> </string>
+    <string name="primary_skills"><font color="#000000">Primary Skills</font><font color="#FF5A1F">*</font> </string>
+    <string name="secondary_skills"><font color="#000000">Secondary Skills</font><font color="#FF5A1F">*</font> </string>
+    <string name="primary_location"><font color="#000000">Primary Location</font><font color="#FF5A1F">*</font> </string>
+    <string name="current_location"><font color="#000000">Current Location</font><font color="#FF5A1F">*</font> </string>
+    <string name="doj"><font color="#000000">DOJ</font><font color="#FF5A1F">*</font> </string>
+    <string name="dom"><font color="#000000">DOM</font><font color="#FF5A1F">*</font> </string>
+    <string name="last_working_day"><font color="#000000">Last Working Day</font><font color="#FF5A1F">*</font> </string>
+    <string name="ctc"><font color="#000000">CTC</font><font color="#FF5A1F">*</font> </string>
+    <string name="employee_name"><font color="#000000">Employee Name</font><font color="#FF5A1F">*</font> </string>
+    <string name="project_name"><font color="#000000">Project Name</font><font color="#FF5A1F">*</font> </string>
+    <string name="onboarding_date"><font color="#000000">OnBoarding Date</font><font color="#FF5A1F">*</font> </string>
+    <string name="client_name"><font color="#000000">Client Name</font><font color="#FF5A1F">*</font> </string>
+    <string name="client_location"><font color="#000000">Client Location</font><font color="#FF5A1F">*</font> </string>
+    <string name="project_details"><font color="#000000">Project Details</font><font color="#FF5A1F">*</font> </string>
+    <string name="project_status"><font color="#000000">Project Status</font><font color="#FF5A1F">*</font> </string>
+    <string name="select_client"><font color="#000000">Select Client</font><font color="#FF5A1F">*</font> </string>
+    <string name="from_date"><font color="#000000">From Date</font><font color="#FF5A1F">*</font> </string>
+
+
+    <string name="upload_photo"><font color="#000000">Upload Photo</font><font color="#FF5A1F">*</font> </string>
+    <string name="x_marks"><font color="#000000">X Marksheet</font><font color="#FF5A1F">*</font> </string>
+    <string name="xii_marks"><font color="#000000">XIIth/Diploma Marksheet</font><font color="#FF5A1F">*</font> </string>
+    <string name="ug_marks"><font color="#000000">UG Marksheet</font><font color="#FF5A1F">*</font> </string>
+    <string name="pg_marks"><font color="#000000">PG Marksheet</font><font color="#FF5A1F">*</font> </string>
+    <string name="company_payslip"><font color="#000000">Company Payslip</font><font color="#FF5A1F">*</font> </string>
+    <string name="company_offerletter1"><font color="#000000">Company Offerletter 1</font><font color="#FF5A1F">*</font> </string>
+    <string name="company_offerletter2"><font color="#000000">Company Offerletter 2</font><font color="#FF5A1F">*</font> </string>
+    <string name="company_offerletter3"><font color="#000000">Company Offerletter 3</font><font color="#FF5A1F">*</font> </string>
+    <string name="to_date"><font color="#000000">To Date</font><font color="#FF5A1F">*</font> </string>
+
+
+
+
+
+
+
+
+    <string name="email_hint"><font color="#000000">Email</font></string>
+    <string name="password_hint"><font color="#979797">Password</font></string>
+    <string name="employee_id_hint"><font color="#686E74">Enter your Employee id</font></string>
+    <string name="select_your_file_hint"><font color="#686E74">Select your File</font></string>
+    <string name="full_name_hint"><font color="#686E74">Enter your full name</font></string>
+    <string name="select_gender_hint"><font color="#686E74">Select Gender</font></string>
+    <string name="dmy"><font color="#686E74">dd-mm-yy</font></string>
+    <string name="email_id_hint"><font color="#686E74">Enter your Email Id</font></string>
+    <string name="mobile_number_hint"><font color="#686E74">Enter your Mobile Number</font></string>
+    <string name="select_hint"><font color="#686E74">Select</font></string>
+    <string name="select_your_employeetype_hint"><font color="#686E74">Select your Employee Type</font></string>
+    <string name="secondary_skills_hint"><font color="#686E74">Enter your Secondary Skills</font></string>
+    <string name="current_location_hint"><font color="#686E74">Enter your Current Location</font></string>
+    <string name="select_your_file"><font color="#686E74">Select your File</font></string>
+    <string name="ctc_hint"><font color="#686E74">0</font></string>
+    <string name="enter_client_name"><font color="#686E74">Enter Client Name</font></string>
+    <string name="enter_client_location"><font color="#686E74">Enter Client Location</font></string>
+    <string name="enter_project_name"><font color="#686E74">Enter Project Name</font></string>
+    <string name="enter_project_details"><font color="#686E74">Enter Project Details</font></string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <array name="gender_prompt">Select Gender</array>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+
+
+
+        <string-array name="employee_type_array">
+            <item>Full-time</item>
+            <item>Part-time</item>
+            <item>Contractor</item>
+            <item>Intern</item>
+        </string-array>
+
+
+        <string-array name="designation_array">
+            <item>Manager</item>
+            <item>Software Engineer</item>
+            <item>QA Engineer</item>
+            <item>Project Manager</item>
+        </string-array>
+
+    <string-array name="role_array">
+        <item>Admin</item>
+        <item>Manager</item>
+        <item>Employee</item>
+    </string-array>
+
+    <string-array name="qualification_array">
+        <item>High School</item>
+        <item>Associate Degree</item>
+        <item>Bachelor Degree</item>
+        <item>Master Degree</item>
+        <item>PhD</item>
+    </string-array>
+
+    <string-array name="primary_skills_array">
+        <item>Kotlin</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>C++</item>
+        <item>JavaScript</item>
+        <item>PHP</item>
+        <item>Swift</item>
+        <item>React Native</item>
+        <item>Angular</item>
+    </string-array>
+
+    <string-array name="primary_location_array">
+        <item>Bangalore</item>
+        <item>Hydreabad</item>
+        <item>Tirupati</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <string-array name="project_name_array">
+        <item>Infinity Learn</item>
+        <item>Insurfin</item>
+        <item>Internal</item>
+        <item>Infonic</item>
+    </string-array>
+
+
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:layout_width">wrap_content </item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:drawableEnd">@drawable/arrow_down</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+    </style>
+
+
+    <style name="CustomButton" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:drawableStart">@drawable/logout_icon_img</item>
+        <item name="android:text">Log out</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+    <style name="Customrbtndocuments" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:drawableStart">@drawable/documents_icon</item>
+        <item name="android:text">Documents</item>
+        <item name="android:drawableEnd">@drawable/arrow_down</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+
+
+    <style name="Customrbtnupload_documents" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">13dp</item>
+        <item name="android:hint">@string/select_your_file_hint</item>
+        <item name="android:drawableEnd">@drawable/upload_icon</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+
+    <style name="Customrbtnleaverequest" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:drawableStart">@drawable/blue_calander_icon</item>
+        <item name="android:text">Leave Request</item>
+        <item name="android:drawableEnd">@drawable/arrow_down</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+    <style name="CustomSearchview" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:drawableEnd">@drawable/search_icon_black</item>
+        <item name="android:drawablePadding">100dp</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingStart">16dp</item>
+
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+    <style name="Customrbtnaddclient" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textColor">@color/color2</item>
+        <item name="android:drawableStart">@drawable/addclient_icon</item>
+        <item name="android:drawableEnd">@drawable/arrow_down</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+    </style>
+
+
+
+
+
+
+</resources>

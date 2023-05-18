@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+    android:id="@+id/apply_leave"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view_apply_leave"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_top"
+            android:elevation="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view1_apply_leave"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_apply_leave" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_apply_leave"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="15sp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/view1_apply_leave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view1_apply_leave">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_apply_leave"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/person_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/person_name"
+                    android:textColor="@color/textColor1"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_apply_leave"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_possiton_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/person_position"
+                    android:textColor="@color/textColor2"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_person_apply_leave"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_person_apply_leave" />
+
+                <ImageButton
+                    android:id="@+id/top_cardview_btn_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_person_apply_leave"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_person_apply_leave"
+                    app:layout_constraintTop_toTopOf="@id/tv_person_apply_leave" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_two_apply_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/round_corner_rectangle"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_apply_leave">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_applyleave_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Apply Leave"
+                    android:textColor="@color/textColor3"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_three_applay_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_applyleave_apply_leave">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/rectangle_outline_cardview">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_usedleave_apply_leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Used Leave"
+                            android:textColor="@color/textColor4"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_unpaid_leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Unpaid: "
+                            android:textColor="@color/textColor3"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_usedleave_apply_leave" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_unpaid_leave_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="10"
+                            app:layout_constraintStart_toEndOf="@id/tv_unpaid_leave"
+                            app:layout_constraintTop_toBottomOf="@id/tv_usedleave_apply_leave" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_paid_leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Paid: "
+                            android:textColor="@color/textColor3"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_unpaid_leave" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_paid_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:hint="5"
+                            app:layout_constraintStart_toEndOf="@id/tv_paid_leave"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_unpaid_leave"
+
+                            />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="48sp"
+                            android:layout_height="48sp"
+                            android:layout_marginEnd="20dp"
+                            android:clipToOutline="true"
+                            app:cardCornerRadius="9dp"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/img_calander_unusedleave"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/calendarbg"
+                                android:scaleType="fitCenter" />
+
+                            <View
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0.5dp"
+                                android:background="@drawable/red_calendar" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_four_apply_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardview_three_applay_leave">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@drawable/rectangle_outline_cardview">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_available_leave_apply_leave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Available Leave"
+                            android:textColor="@color/textColor4"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_unpaid_leave_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Unpaid: "
+                            android:textColor="@color/textColor3"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_available_leave_apply_leave" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_unpaid_leave_number_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="10"
+                            app:layout_constraintStart_toEndOf="@id/tv_unpaid_leave_two"
+                            app:layout_constraintTop_toBottomOf="@id/tv_available_leave_apply_leave" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_paid_leave_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Paid: "
+                            android:textColor="@color/textColor3"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_unpaid_leave_two" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_paid_number_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:hint="5"
+                            app:layout_constraintStart_toEndOf="@id/tv_paid_leave_two"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_unpaid_leave_number_two" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="48sp"
+                            android:layout_height="48sp"
+                            android:layout_marginEnd="20dp"
+                            android:clipToOutline="true"
+                            app:cardCornerRadius="9dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/calendar_pendingLeave"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/calendarbg"
+                                android:scaleType="fitCenter" />
+
+                            <View
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="0.5dp"
+                                android:background="@drawable/green_calendar" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_leave_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle_outline_cardview"
+                    android:hint="Enter Leave Subject :"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="42dp"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardview_four_apply_leave"
+
+                    />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_fromdate_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/from_date"
+                    android:textSize="15sp"
+
+                    app:layout_constraintBottom_toTopOf="@+id/et_from_date_apply_leave"
+                    app:layout_constraintStart_toStartOf="@+id/et_from_date_apply_leave" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_from_date_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:drawableEnd="@drawable/calander_icon"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="@string/dmy"
+                    android:inputType="date"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toStartOf="@+id/et_to_date_apply_leave"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_leave_subject" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_to_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/to_date"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_to_date_apply_leave"
+                    app:layout_constraintStart_toStartOf="@+id/et_to_date_apply_leave" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_to_date_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:drawableEnd="@drawable/calander_icon"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="@string/dmy"
+                    android:inputType="date"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/et_from_date_apply_leave"
+                    app:layout_constraintTop_toBottomOf="@id/et_leave_subject" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_currentlocation_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Total Days"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_currentlocation_apply_leave"
+                    app:layout_constraintStart_toStartOf="@+id/et_currentlocation_apply_leave" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_currentlocation_apply_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="@string/current_location_hint"
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_to_date_apply_leave" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_apply_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_currentlocation_apply_leave">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_unpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black"
+                        android:checked="true"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Unpaid"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_paid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:buttonTint="@color/black"
+                        android:checked="false"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Paid"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_submit_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/background_button2"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@id/Btn_cancel_apply_leave"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup_apply_leave" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_cancel_apply_leave"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/button_background_white"
+                    android:text="cancel"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/Btn_submit_apply_leave"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup_apply_leave" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/spinner_leave_request"
+                    android:layout_width="0dp"
+                    android:layout_height="37dp"
+                    android:layout_marginHorizontal="95dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:textAllCaps="false"
+                    android:theme="@style/Customrbtnleaverequest"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Btn_cancel_apply_leave" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_apply_leave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spinner_leave_request">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_logout_apply_leave"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="125dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/rectangle_black_background"
+            android:text="Log out"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:theme="@style/CustomButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_two_apply_leave" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

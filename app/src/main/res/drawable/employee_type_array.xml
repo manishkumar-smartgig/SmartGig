@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="employee_type_array">
+        <item>Full-time</item>
+        <item>Part-time</item>
+        <item>Contractor</item>
+        <item>Intern</item>
+    </string-array>
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+    tools:context=".admin.ui.assigned_project.AssignedProjectFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_assigned_project"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_top"
+            android:elevation="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_ap"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_assigned_project" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_assigned_project"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="15sp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/view_ap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_ap">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_assigned_project"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/person_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_assigned_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/person_name"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/textColor1"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_assigned_project"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_possiton_assigned_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/person_position"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/textColor2"
+                    app:layout_constraintStart_toStartOf="@+id/tv_person_assigned_project"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_person_assigned_project" />
+
+                <ImageButton
+                    android:id="@+id/top_cardview_btn_assigned_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintTop_toTopOf="@id/tv_person_assigned_project"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_person_assigned_project"
+                    app:layout_constraintStart_toEndOf="@id/tv_person_assigned_project"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_two_assigned_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/round_corner_rectangle"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="15dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_assigned_project">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_assigned_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_assigned_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Assigned Project"
+                        android:textColor="@color/color2"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_employee_id_add_employee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/employee_name"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/employeename_searchview_assigned_project"
+                        app:layout_constraintStart_toStartOf="@+id/employeename_searchview_assigned_project" />
+
+                    <SearchView
+                        android:id="@+id/employeename_searchview_assigned_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="51dp"
+                        android:background="@drawable/rectangle_black_background"
+                        android:hint="@string/employee_id_hint"
+                        android:inputType="textCapCharacters"
+                        android:paddingStart="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_assigned_project" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_spinner_projectname_assigned_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/project_name"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/et_spinner_projectname_assigned_project"
+                        app:layout_constraintStart_toStartOf="@+id/et_spinner_projectname_assigned_project" />
+
+                    <Spinner
+                        android:id="@+id/et_spinner_projectname_assigned_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/rectangle_black_background"
+                        android:paddingStart="16dp"
+                        android:theme="@style/Spinner"
+                        android:entries="@array/project_name_array"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/employeename_searchview_assigned_project" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_onbordingdate_assigned_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/onboarding_date"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/et_onbordingdate_assigned_project"
+                        app:layout_constraintStart_toStartOf="@+id/et_onbordingdate_assigned_project" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_onbordingdate_assigned_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/rectangle_black_background"
+                        android:hint="@string/dmy"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="15sp"
+                        android:paddingStart="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/et_spinner_projectname_assigned_project" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Btn_assign_assigned_project"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginBottom="21dp"
+                        android:background="@drawable/background_button2"
+                        android:text="Assign"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/Btn_reset_assigned_project"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/et_onbordingdate_assigned_project" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Btn_reset_assigned_project"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginBottom="21dp"
+                        android:background="@drawable/button_background_white"
+                        android:text="Reset"
+                        android:textAllCaps="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/Btn_assign_assigned_project"
+                        app:layout_constraintTop_toBottomOf="@+id/et_onbordingdate_assigned_project" />
+
+
+                    <!--<View
+                        android:id="@+id/view_invisbible_assigned_project"
+                        android:layout_width="340dp"
+                        android:layout_height="1dp"
+                        android:background="#F0F0F0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="Btn_reset_assigned_project"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        />-->
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_assigned_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/cl_assigned_project"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageButton
+            android:id="@+id/Btn_logut_assigned_project"
+            android:layout_width="177dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@drawable/logut_button_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_two_assigned_project" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addclient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view_addclient"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_top"
+            android:elevation="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view1_addclient"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_addclient" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_addclient"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="15sp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/view1_addclient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view1_addclient">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_addclient"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/person_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_addclient"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/person_name"
+                    android:textColor="@color/textColor1"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_addclient"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_possiton_addclient"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/person_position"
+                    android:textColor="@color/textColor2"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_person_addclient"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_person_addclient" />
+
+                <ImageButton
+                    android:id="@+id/top_cardview_btn_addclient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_person_addclient"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_person_addclient"
+                    app:layout_constraintTop_toTopOf="@id/tv_person_addclient" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/spinnerbtn_addclient"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="125dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rectangle_black_background"
+            android:textAllCaps="false"
+            android:text="Client"
+            android:paddingStart="10dp"
+            android:theme="@style/Customrbtnaddclient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_addclient" />
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_two_addclient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="27dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerbtn_addclient">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_addclient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Add Client"
+                    android:textColor="@color/color2"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_client_name_add_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="@string/client_name"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_client_name_add_client"
+                    app:layout_constraintStart_toStartOf="@+id/et_client_name_add_client" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_client_name_add_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:hint="@string/enter_client_name"
+                    android:inputType="textCapCharacters"
+                    android:paddingStart="16dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_addclient" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_client_location_add_client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="@string/client_location"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_client_location_add_client"
+                    app:layout_constraintStart_toStartOf="@+id/et_client_location_add_client" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_client_location_add_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/rectangle_black_background"
+                    android:paddingStart="16dp"
+                    android:hint="@string/enter_client_location"
+                    android:inputType="textCapCharacters"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_client_name_add_client" />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_add_client"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="@drawable/background_button2"
+                    android:text="Add Client"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@id/Btn_reset_add_client"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_client_location_add_client" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Btn_reset_add_client"
+                    android:layout_width="0dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="@drawable/button_background_white"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/Btn_add_client"
+                    app:layout_constraintTop_toBottomOf="@+id/et_client_location_add_client" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_client_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:text="Client Details"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/color2"
+                    android:layout_marginTop="21dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Btn_add_client"
+                     />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_addclient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_client_details"
+                    />
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_logout_addclient"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginHorizontal="125dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/rectangle_black_background"
+            android:text="Log out"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:theme="@style/CustomButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_two_addclient" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

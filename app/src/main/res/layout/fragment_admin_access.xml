@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghost_white"
+    tools:context=".admin.ui.admin_access.AdminAccessFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_admin_acess"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_top"
+            android:elevation="1sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <View
+            android:id="@+id/view_two_admin_acess"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_admin_acess" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_admin_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="30dp"
+            android:elevation="15sp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/view_two_admin_acess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view_two_admin_acess">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/img_admin_access"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginVertical="12dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/person_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_admin_access"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/person_name"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/textColor1"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@id/img_admin_access"
+                    app:layout_constraintTop_toTopOf="@id/img_admin_access" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_person_possiton_admin_access"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/person_position"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/textColor2"
+                    app:layout_constraintStart_toStartOf="@+id/tv_person_admin_access"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_person_admin_access" />
+
+                <ImageButton
+                    android:id="@+id/top_cardview_btn_admin_access"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow_down"
+                    app:layout_constraintTop_toTopOf="@id/tv_person_admin_access"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_person_admin_access"
+                    app:layout_constraintStart_toEndOf="@id/tv_person_admin_access"
+                    app:layout_constraintEnd_toEndOf="parent"
+                     />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_two_admin_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="29dp"
+            android:background="@drawable/round_corner_rectangle"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="15dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_admin_access">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_admin_access"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_assign_role"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Assigned Role"
+                            android:textColor="@color/color2"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_employeename_admin_access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/employee_name"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/employeename_searchview_admin_access"
+                        app:layout_constraintStart_toStartOf="@+id/employeename_searchview_admin_access" />
+
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/employeename_searchview_admin_access"
+                        android:layout_width="match_parent"
+                        android:layout_height="43dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="48dp"
+                        android:background="@drawable/rectangle_black_background"
+                        android:inputType="textCapCharacters"
+                        android:theme="@style/CustomSearchview"
+                        android:iconifiedByDefault="false"
+                        android:queryHint="Search"
+                        android:paddingStart="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_assign_role" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/role"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                        app:layout_constraintStart_toStartOf="@+id/radioGroup" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="57dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="38dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/employeename_searchview_admin_access">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_salaried"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="14sp"
+                            android:checked="true"
+                            android:text="Admin" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_self"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginEnd="30dp"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="14sp"
+                            android:buttonTint="@color/black"
+                            android:checked="false"
+                            android:text="Super Admin" />
+
+                    </RadioGroup>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Btn_assign_admin_access"
+                        android:layout_width="159dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="21dp"
+                        android:background="@drawable/background_button2"
+                        android:text="Assign"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+                    <View
+                        android:id="@+id/view_invisible_admin_access"
+                        android:layout_width="340dp"
+                        android:layout_height="1dp"
+                        app:layout_constraintTop_toBottomOf="@id/Btn_assign_admin_access"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="#f0f0f0"
+                        />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_admin_access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Admins"
+                        android:textColor="@color/color2"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:layout_marginBottom="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view_invisible_admin_access" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_assigned_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/cl_admin_access"
+                    android:layout_marginTop="11dp"
+
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageButton
+            android:id="@+id/Btn_logut_assigned_project"
+            android:layout_width="177dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/logut_button_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_two_admin_access" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

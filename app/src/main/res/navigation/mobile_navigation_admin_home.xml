@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.smartgig.tech.admin.ui.home.HomeFragment"
+
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_assignedProjectFragment"
+            app:destination="@id/assignedProjectFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_adminAccessFragment"
+            app:destination="@id/adminAccessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.smartgig.tech.admin.ui.gallery.GalleryFragment"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.smartgig.tech.admin.ui.slideshow.SlideshowFragment"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.smartgig.tech.admin.ui.add_employee.AddEmployeeFragment"
+
+        tools:layout="@layout/fragment_add_employee" />
+
+    <fragment
+        android:id="@+id/assignedProjectFragment"
+        android:name="com.smartgig.tech.admin.ui.assigned_project.AssignedProjectFragment"
+        tools:layout="@layout/fragment_assigned_project" />
+
+    <fragment
+        android:id="@+id/adminAccessFragment"
+        android:name="com.smartgig.tech.admin.ui.admin_access.AdminAccessFragment"
+
+        tools:layout="@layout/fragment_admin_access" />
+
+
+
+
+</navigation>
